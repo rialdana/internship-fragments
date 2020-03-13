@@ -1,4 +1,4 @@
-package com.elaniin.smartphonesapp.models
+package com.ideaworks.smartphonesapp.models
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

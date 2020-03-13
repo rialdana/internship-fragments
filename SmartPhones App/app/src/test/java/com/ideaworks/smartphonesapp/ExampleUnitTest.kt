@@ -1,4 +1,4 @@
-package com.elaniin.smartphonesapp
+package com.ideaworks.smartphonesapp
 
 import org.junit.Test
 

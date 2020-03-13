@@ -1,4 +1,4 @@
-package com.elaniin.smartphonesapp.fragments
+package com.ideaworks.smartphonesapp.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,10 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-import com.elaniin.smartphonesapp.R
-import com.elaniin.smartphonesapp.adapters.EquiposAdapter
-import com.elaniin.smartphonesapp.models.Equipo
-import com.elaniin.smartphonesapp.models.Properties
+import com.ideaworks.smartphonesapp.R
+import com.ideaworks.smartphonesapp.adapters.EquiposAdapter
+import com.ideaworks.smartphonesapp.models.Equipo
+import com.ideaworks.smartphonesapp.models.Properties
 import java.util.ArrayList
 
 /**

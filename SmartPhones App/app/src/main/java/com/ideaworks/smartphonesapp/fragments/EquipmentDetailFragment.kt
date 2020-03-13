@@ -1,14 +1,14 @@
-package com.elaniin.smartphonesapp.fragments
+package com.ideaworks.smartphonesapp.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.elaniin.smartphonesapp.OBJECT_KEY
+import com.ideaworks.smartphonesapp.OBJECT_KEY
 
-import com.elaniin.smartphonesapp.R
-import com.elaniin.smartphonesapp.models.Equipo
+import com.ideaworks.smartphonesapp.R
+import com.ideaworks.smartphonesapp.models.Equipo
 
 class EquipmentDetailFragment : Fragment() {
     private var equipment: Equipo? = null

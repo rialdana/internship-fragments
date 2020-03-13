@@ -1,4 +1,4 @@
-package com.elaniin.smartphonesapp.adapters
+package com.ideaworks.smartphonesapp.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,8 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.elaniin.smartphonesapp.R
-import com.elaniin.smartphonesapp.models.Equipo
+import com.ideaworks.smartphonesapp.R
+import com.ideaworks.smartphonesapp.models.Equipo
 
 class EquiposAdapter(private val equipos: ArrayList<Equipo>, private val listener: OnClickListener) :
     RecyclerView.Adapter<EquiposAdapter.EquiposViewHolder>() {

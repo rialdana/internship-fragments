@@ -1,9 +1,8 @@
-package com.elaniin.smartphonesapp
+package com.ideaworks.smartphonesapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.elaniin.smartphonesapp.fragments.EquipmentDetailFragment
-import com.elaniin.smartphonesapp.fragments.EquipmentListFragment
+import com.ideaworks.smartphonesapp.fragments.EquipmentListFragment
 
 class MainActivity : AppCompatActivity() {
 

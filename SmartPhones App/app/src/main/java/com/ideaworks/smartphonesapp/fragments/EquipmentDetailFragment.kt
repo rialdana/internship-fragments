@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.ideaworks.smartphonesapp.OBJECT_KEY
 
 import com.ideaworks.smartphonesapp.R
@@ -28,6 +29,12 @@ class EquipmentDetailFragment : Fragment() {
 
 
         return inflater.inflate(R.layout.fragment_equipment_detail, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        view.findViewById<TextView>(R.id.text_equipment_detail).text = equipment!!.name
     }
 
     companion object {

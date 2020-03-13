@@ -1,6 +1,8 @@
 package com.ideaworks.smartphonesapp.fragments
 
+import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -9,8 +11,10 @@ import androidx.recyclerview.widget.RecyclerView
 
 import com.ideaworks.smartphonesapp.R
 import com.ideaworks.smartphonesapp.adapters.EquiposAdapter
+import com.ideaworks.smartphonesapp.listeners.ActivityListener
 import com.ideaworks.smartphonesapp.models.Equipo
 import com.ideaworks.smartphonesapp.models.Properties
+import java.lang.Exception
 import java.util.ArrayList
 
 /**
@@ -18,8 +22,26 @@ import java.util.ArrayList
  */
 class EquipmentListFragment : Fragment(), EquiposAdapter.OnClickListener {
 
+    private var listener: ActivityListener? = null
+
     private lateinit var recyclerViewEquipos: RecyclerView
     private var equiposList = arrayListOf<Equipo>()
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+
+        try {
+            listener = context as ActivityListener
+        }catch (e: Exception){
+            Log.e("EquipmentListFragment", "Activity is not compatible", e)
+        }
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+
+        listener = null
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -79,6 +101,9 @@ class EquipmentListFragment : Fragment(), EquiposAdapter.OnClickListener {
 
     override fun showEquipmentDetail(equipo: Equipo) {
 
+        val fragment = EquipmentDetailFragment.newInstance(equipo)
+
+        listener?.loadFragment(fragment)
     }
 
 
